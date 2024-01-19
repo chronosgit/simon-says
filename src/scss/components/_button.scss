@@ -12,6 +12,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         box-shadow: 0 0 2px var(--clr-main);
+        transition: all 0.2s ease;
     }
 
     &_sound-switch {
@@ -19,7 +20,7 @@
         padding: 0.1rem;
         width: var(--size);
         height: var(--size);
-        background-color: var(--clr-bg-contrast);
+        background-color: var(--clr-white);
 
         &:hover,
         &:focus-visible {

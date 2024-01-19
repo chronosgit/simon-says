@@ -1,7 +1,11 @@
 .theme-icon {
     --size: 1.35rem;
+    --shift-no: 2px;
+    --shift-right: 25px;
+    --shift-size: var(--theme-icon-shift-no);
+
     position: absolute;
-    left: 2px;
+    left: var(--shift-size);
     top: 1px;
     width: var(--size);
     height: var(--size);
@@ -9,4 +13,9 @@
     background-image: var(--url-theme-switch-icon);
     background-position: center;
     background-size: contain;
+    transition: all 0.2s ease;
+
+    @media (prefers-color-scheme: dark) {
+        --shift-size: var(--shift-right);
+    }
 }
