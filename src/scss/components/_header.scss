@@ -1,0 +1,25 @@
+@mixin flexBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    @include flexBox;
+    padding: 0.5rem 1rem;
+    border-block-end: 1px solid var(--clr-main);
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+    background-color: inherit;
+
+    &__logo {
+        --size: 5rem;
+        max-width: var(--size);
+        max-height: var(--size);
+    }
+
+    &__buttons {
+        @include flexBox;
+        gap: 1rem;
+    }
+}
