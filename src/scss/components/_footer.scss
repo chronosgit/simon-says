@@ -1,0 +1,31 @@
+.footer {
+    position: absolute;
+    padding: 0.5rem;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-block-start: 1px solid var(--clr-bg-hover);
+    text-align: center;
+
+    &__text {
+        font-size: 1.2rem;
+        color: var(--clr-bg-hover);
+
+        &:hover,
+        &:focus-visible {
+            color: var(--clr-main);
+        }
+    }
+
+    &__link {
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+
+        &:hover,
+        &:focus-visible {
+            
+        }
+    }
+}
