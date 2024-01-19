@@ -26,4 +26,16 @@
             background-color: var(--clr-bg-hover);
         }
     }
+
+    &_play {
+        width: 4rem;
+        height: 4rem;
+
+        & > img {
+            &:hover,
+            &:focus-visible {
+                transform: scale(1.1);
+            }
+        }
+    }
 }

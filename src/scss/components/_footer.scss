@@ -3,24 +3,15 @@
     border-block-start: 1px solid var(--clr-bg-hover);
     text-align: center;
 
-    &__text {
+    &__link {
+        position: relative;
         font-size: 1.2rem;
+        text-decoration: none;
         color: var(--clr-bg-hover);
 
         &:hover,
         &:focus-visible {
             color: var(--clr-main);
-        }
-    }
-
-    &__link {
-        position: relative;
-        text-decoration: none;
-        color: inherit;
-
-        &:hover,
-        &:focus-visible {
-            
         }
     }
 }
