@@ -1,5 +1,11 @@
 :root {
-    --bg-url: url("../../../public/assets/images/bg.png");
+    --url-bg: url("../../../public/assets/images/bg.png");
+    --url-theme-switch-bg: var(--url-light-sky);
+    --url-theme-switch-icon: var(--url-sun);
+    --url-light-sky: url("../../../public/assets/icons/light-sky.png");
+    --url-dark-sky: url("../../../public/assets/icons/dark-sky.png");
+    --url-sun: url("../../../public/assets/icons/sun.png");
+    --url-moon: url("../../../public/assets/icons/moon.png");
 
     --ff: var(--ff-main) var(--ff-secondary) var(--ff-base);
     --ff-main: 'Quicksand';
@@ -9,6 +15,8 @@
     --clr-bg: var(--clr-white);
     --clr-bg-hover: var(--clr-gray);
     --clr-main: var(--clr-black);
+    --clr-theme-switch-bg: var(--clr-yellow);
+
     --clr-white: #fff;
     --clr-gray: #cccccc;
     --clr-black: #000;
@@ -16,4 +24,6 @@
     --clr-blue: #4b7def;
     --clr-magenta: #b04fbd;
     --clr-red: #bf476f;
+    --clr-yellow: #faef56;
+    --clr-blue-dark: #fff;
 }

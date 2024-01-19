@@ -1,0 +1,11 @@
+.theme-icon {
+    --size: 1.35rem;
+    position: absolute;
+    left: 2px;
+    top: 1px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-image: var(--url-theme-switch-icon);
+    background-position: center;
+}
