@@ -1,0 +1,13 @@
+.circle {
+    --size: 6rem;
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top: 50%; 
+    margin-inline: auto;
+    width: var(--size);
+    height: var(--size);
+    transform: translateY(-3.2rem);
+    background-color: var(--clr-bg);
+    border-radius: 50%;
+}

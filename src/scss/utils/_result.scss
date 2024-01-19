@@ -1,0 +1,11 @@
+.result {
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top: 50%; 
+    margin-inline: auto;
+    transform: translateY(-1.3rem);
+    text-align: center;
+    font-size: 2rem;
+    z-index: 1;
+}

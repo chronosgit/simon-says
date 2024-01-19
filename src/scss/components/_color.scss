@@ -1,0 +1,46 @@
+@mixin animalMixin {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.color {
+    --radius-size: 4rem;
+
+    &_cyan {
+        border-top-left-radius: var(--radius-size);
+        // background-color: var(--clr-cyan);
+        background: var(--clr-cyan) var(--url-fox);
+        background-size: 4rem;
+    }
+
+    &_red {
+        border-top-right-radius: var(--radius-size);
+        background: var(--clr-red) var(--url-frog);
+        background-size: 4.5rem;
+    }
+
+    &_magenta {
+        border-bottom-left-radius: var(--radius-size);
+        background: var(--clr-magenta) var(--url-duck);
+        background-size: 5rem;
+    }
+
+    &_blue {
+        border-bottom-right-radius: var(--radius-size);
+        background: var(--clr-blue) var(--url-penguin);
+        background-size: 3.5rem;
+    }
+
+    &_cyan,
+    &_red,
+    &_magenta,
+    &_blue {
+        @include animalMixin;
+    }
+
+    &:hover,
+    &:focus-visible {
+        cursor: pointer;
+        box-shadow: 0 0 0.5rem var(--clr-main);
+    }
+}
