@@ -1,6 +1,24 @@
 .button {
+    background: none;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
 
     &_theme-switch {
-        
+        width: 3rem;
+        height: 1.5rem;
+        background-color: red;
+    }
+
+    &_sound-switch {
+        --size: 2rem;
+        padding: 0.1rem;
+        width: var(--size);
+        height: var(--size);
+
+        &:hover,
+        &:focus-visible {
+            background-color: var(--clr-bg-hover);
+        }
     }
 }
