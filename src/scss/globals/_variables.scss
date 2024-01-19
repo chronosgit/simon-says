@@ -1,3 +1,8 @@
 :root {
     --bg-url: url("../../../public/assets/images/bg.png");
+
+    --ff: var(--ff-main) var(--ff-secondary) var(--ff-base);
+    --ff-main: 'Quicksand';
+    --ff-secondary: Verdana;
+    --ff-base: sans-serif;
 }
