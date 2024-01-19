@@ -1,0 +1,12 @@
+{
+  "name": "simonsays",
+  "version": "1.0.0",
+  "description": "Web-game, based on the famous 'Simon says' game",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nurken Kidirmaganbetov",
+  "license": "ISC"
+}
