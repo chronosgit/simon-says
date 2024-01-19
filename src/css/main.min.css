@@ -1,1 +1,1 @@
-/*# sourceMappingURL=main.min.css.map */
+:root{--bg-url: url("../../../public/assets/images/bg.png")}body{background-image:var(--bg-url);background-position:25% 0;background-repeat:no-repeat;overflow-x:hidden}*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}img{display:block;max-width:100%;height:auto}/*# sourceMappingURL=main.min.css.map */
