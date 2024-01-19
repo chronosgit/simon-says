@@ -30,6 +30,13 @@
     &_play {
         width: 4rem;
         height: 4rem;
+        border-radius: 50%;
+
+        &:focus-visible {
+            img {
+                transform: scale(1.1);
+            }
+        }
 
         & > img {
             &:hover,
