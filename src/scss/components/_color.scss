@@ -10,25 +10,25 @@
         border-top-left-radius: var(--radius-size);
         // background-color: var(--clr-cyan);
         background: var(--clr-cyan) var(--url-fox);
-        background-size: 4rem;
+        background-size: var(--radius-size);
     }
 
     &_red {
         border-top-right-radius: var(--radius-size);
         background: var(--clr-red) var(--url-frog);
-        background-size: 4.5rem;
+        background-size: calc(var(--radius-size) + 0.5rem);
     }
 
     &_magenta {
         border-bottom-left-radius: var(--radius-size);
         background: var(--clr-magenta) var(--url-duck);
-        background-size: 5rem;
+        background-size: calc(var(--radius-size) + 1rem);
     }
 
     &_blue {
         border-bottom-right-radius: var(--radius-size);
         background: var(--clr-blue) var(--url-penguin);
-        background-size: 3.5rem;
+        background-size: calc(var(--radius-size) - 0.5rem);
     }
 
     &_cyan,

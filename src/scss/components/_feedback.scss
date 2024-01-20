@@ -1,0 +1,12 @@
+.feedback {
+    padding-block-start: 1rem;
+    text-align: center;
+
+    &__message {
+        font-size: 1.3rem;
+    }
+
+    &__level {
+        color: var(--clr-blue);
+    }
+}
