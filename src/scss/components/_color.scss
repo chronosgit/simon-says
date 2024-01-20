@@ -27,8 +27,8 @@
 
     &_blue {
         border-bottom-right-radius: var(--radius-size);
-        background: var(--clr-blue) var(--url-penguin);
-        background-size: calc(var(--radius-size) - 0.5rem);
+        background: var(--clr-blue) var(--url-dog);
+        background-size: calc(var(--radius-size) + 2rem);
     }
 
     &_cyan,

@@ -92,12 +92,30 @@ function GameSession() {
 
     this.activateColor = function(color) {
         const colorButton = document.getElementById(`color-${color}`);
+        let animalSoundUrl = "";
+        
+        switch(color) {
+            case "cyan":
+                animalSoundUrl = "../../public/assets/sounds/meow.mp3";
+                break;
+            case "red":
+                animalSoundUrl = "../../public/assets/sounds/frog.mp3";
+                break;
+            case "magenta":
+                animalSoundUrl = "../../public/assets/sounds/duck.mp3";
+                break;
+            case "blue":
+                animalSoundUrl = "../../public/assets/sounds/dog.mp3";
+                break;
+        }
 
         const activationPromise = new Promise((res, rej) => {
             setTimeout(() => {
                 colorButton.classList.add("color-choose-outline");
+                const animalSound = new Audio(animalSoundUrl);
+                animalSound.play();
                 res(true);
-            }, 1000)
+            }, 1000);
         })
         .then(val => {
             setTimeout(() => colorButton.classList.remove("color-choose-outline"), 500);
