@@ -6,6 +6,15 @@ function GameSession() {
     this.areAnimationsOn = false;
     this.colors = {};
 
+    this.playSound = function(url) {
+        const soundSwitchButton = document.querySelector(".button_sound-switch");
+        const soundSwitchButtonStyles = getComputedStyle(soundSwitchButton);
+        if(soundSwitchButtonStyles.getPropertyValue("--mode") === "none") { // unmuted
+            const sound = new Audio(url);
+            sound.play();
+        }
+    }
+
     this.chooseColor = function(color) {
         if(!this.isGameOn) return;
         if(this.areAnimationsOn) return;
@@ -13,6 +22,9 @@ function GameSession() {
         const result = document.querySelector(".result");
 
         if(color === this.colors[this.currentStep + 1]) {
+            const bellSoundUrl = "../../public/assets/sounds/win.mp3";
+            this.playSound(bellSoundUrl);
+
             this.currentStep++;
 
             if(this.currentStep === this.level) { // all picking is correct
@@ -39,6 +51,9 @@ function GameSession() {
     }
 
     this.endGame = function() {
+        const failureSoundUrl = "../../public/assets/sounds/failure.mp3";
+        this.playSound(failureSoundUrl);
+
         this.bestResult = this.level - 1 >= this.bestResult ? this.level - 1 : this.bestResult;
 
         const feedBackSection = document.querySelector(".feedback");
@@ -112,8 +127,9 @@ function GameSession() {
         const activationPromise = new Promise((res, rej) => {
             setTimeout(() => {
                 colorButton.classList.add("color-choose-outline");
-                const animalSound = new Audio(animalSoundUrl);
-                animalSound.play();
+                
+                this.playSound(animalSoundUrl);
+
                 res(true);
             }, 1000);
         })

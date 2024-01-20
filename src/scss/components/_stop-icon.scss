@@ -1,0 +1,13 @@
+.stop-icon {
+    --size: 1rem;
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-image: var(--url-stop);
+    background-position: center;
+    background-size: contain;
+    transition: all 0.2s ease;
+}

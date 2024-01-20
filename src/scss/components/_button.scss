@@ -17,14 +17,15 @@
 
     &_sound-switch {
         --size: 2rem;
+        --mode: block;
+        position: relative;
         padding: 0.1rem;
         width: var(--size);
         height: var(--size);
         background-color: var(--clr-white);
 
-        &:hover,
-        &:focus-visible {
-            background-color: var(--clr-bg-hover);
+        & > div {
+            display: var(--mode);
         }
     }
 
@@ -33,7 +34,7 @@
         height: 4rem;
         border-radius: 50%;
 
-        &:focus-visible {
+        &:focus-visible { // kettabs only at div -> this is a workaround
             img {
                 transform: scale(1.1);
             }
