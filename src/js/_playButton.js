@@ -1,6 +1,5 @@
 import GameSession from "./_gameSession.js";
 
-const colorButtons = document.querySelectorAll(".color");
 const playButton = document.querySelector(".button_play");
 const startPlaySection = document.querySelector(".play");
 let gameSession = null;
